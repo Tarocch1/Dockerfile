@@ -1,4 +1,4 @@
-FROM --platform=$TARGETPLATFORM caddy:alpine-builder AS builder
+FROM --platform=$TARGETPLATFORM caddy:builder-alpine AS builder
 
 RUN xcaddy build \
     --with github.com/caddy-dns/cloudflare
